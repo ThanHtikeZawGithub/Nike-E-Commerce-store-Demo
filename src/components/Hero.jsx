@@ -17,9 +17,9 @@ const Hero = ({heroapi: { title, subtitle, btntext, img,
                                 filter drop-shadow-sm text-slate-200'>{title}</h1>
                 <h1 className='text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold
                                 filter drop-shadow-sm text-slate-200'>{subtitle}</h1>
-                <button type='button' className='button-theme bg-slate-200 rounded-xl my-5'>{btntext}</button>
-                <div className='hidden md:grid md:items-center md:gap-3 md:absolute
-                md:top-[33vh] lg:top-[27vh] md:left-[11%] md:w-auto md:h-auto'>
+                <a href='#sales' scrollSmooth className='button-theme bg-slate-200 rounded-xl my-5'>{btntext}</a>
+                <div className='grid items-center gap-6 md:gap-3 absolute
+                top-[33vh] lg:top-[27vh] left-[11%] w-auto h-auto md:hidden'>
                   {videos?.map((video,idx)=>(
                     <Clip 
                       key={idx}
